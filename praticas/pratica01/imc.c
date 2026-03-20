@@ -5,44 +5,21 @@
 //calcular mc
 //testar
 
-//float menor(float n){
+float calcular_imc(float peso, float altura){
 
-//    if(n <=0){
-//        return 0;
-//    }
+    if(peso || altura <=0){
+        return 0;
+    }
+    return peso/(altura*altura);
 
-//}
+}
 
 
 int main(){
+ float imc = 1;
 
-    //variaveis
-    float peso = 0;
-    float altura = 0;
-
-    printf("Digite seu peso:\n");
-    scanf("%f",&peso);
-    printf("Digite sua altura:\n");
-    scanf("%f",&altura);
-    
-    //menor(peso);
-    //menor(altura);
-    if(peso && altura <= 0){
-        Printf("0\n");
-        return 0;
-    }
-    float altura2 = altura * altura;
-    float imc = peso / altura2;
-
-    if(imc < 18.5){
-        printf("peso ideal\n");
-    } if(imc >18.5 && imc < 24.9){
-        printf("sobrepeso\n");
-    } if(imc >= 30.0){
-        printf("obesidade\n");
-    }
-    
-
+ imc = calcular_imc(1.90,70);
+ printf("%2.f", imc);
 
     return 0;
 }

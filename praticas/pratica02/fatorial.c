@@ -12,7 +12,7 @@ unsigned long long fatorial_recursivo(int n){
     return resultado;
 }
 
-long long fatorial_iterativo(int n) {
+unsigned long long fatorial_iterativo(int n) {
     long long res = 1;
     for (int i = 1; i <= n; i++) {
         res *= i; // O(n)
@@ -22,7 +22,7 @@ long long fatorial_iterativo(int n) {
 
 int main(){
 
-    int res = 0;
+    unsigned long long res = 0;
 
     clock_t inicio = clock();
     res = fatorial_recursivo(5);

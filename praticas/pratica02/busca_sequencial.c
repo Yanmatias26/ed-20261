@@ -1,9 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "selecao.h"
 
 #define tamanho 100
+
+int buscar_sequencial(int v[], int tam, int valor){
+    
+    // 0(n)
+    for(int i = 0; i < tam; i++){ 
+        if(v[i] == valor){
+            return i;
+        }
+    }
+    return -1;
+}
+
+void troca(int *a, int *b ){
+    int aux = *a;
+    *a = *b;
+    *b = aux;
+}
 
 int main(){
 

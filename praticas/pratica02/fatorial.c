@@ -3,7 +3,7 @@
 #include <time.h>
 
 unsigned long long fatorial_recursivo(int n){
-    int resultado = 1;
+    unsigned long long resultado = 1;
     if(n == 0){
         return resultado;
     } else {
@@ -13,7 +13,7 @@ unsigned long long fatorial_recursivo(int n){
 }
 
 unsigned long long fatorial_iterativo(int n) {
-    long long res = 1;
+    unsigned long long res = 1;
     for (int i = 1; i <= n; i++) {
         res *= i; // O(n)
     }

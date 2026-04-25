@@ -6,6 +6,9 @@
 int tam = 10;
 
 
+
+
+
 void prencher_matriz(int mat[10][10], int tamanho){
     for(int i = 0; i < tamanho; i++){
         for(int j = 0; j < tamanho; j++){
@@ -44,9 +47,19 @@ void mostrar_matriz(int mat[10][10]){
 
 int main(){
     int mat[tam][tam];
+    clock_t inicio = clock();
     prencher_matriz(mat,tam);
+    clock_t final = clock();
+    double duracao = (double)(final - inicio)/ CLOCKS_PER_SEC;
+    printf("demorou para prencher a matriz %f\n",duracao);
+
     mostrar_matriz(mat);
+    inicio = clcok();
     prencher_matriz1for(mat,tam);
+    final = clock();
+    double duracao = (double)(final - inicio)/ CLOCKS_PER_SEC;
+    printf("demorou para prencher a matriz %f\n",duracao);
+
     printf("\n");
     mostrar_matriz(mat);
 

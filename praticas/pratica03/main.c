@@ -3,7 +3,8 @@
 #include <string.h>
 #include "conta.h"
 
-
+Conta conta[100];
+int total = 0;
 
 int main(){
 

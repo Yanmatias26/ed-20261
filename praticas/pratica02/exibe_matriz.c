@@ -54,7 +54,7 @@ int main(){
     printf("demorou para prencher a matriz %f\n",duracao);
 
     mostrar_matriz(mat);
-    inicio = clcok();
+    inicio = clock();
     prencher_matriz1for(mat,tam);
     final = clock();
     duracao = (double)(final - inicio)/ CLOCKS_PER_SEC;

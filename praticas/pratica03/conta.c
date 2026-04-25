@@ -6,15 +6,12 @@
 
 
 
-Conta* conta_criar(int RG, const char* nome, const char* email, const char* senha) {
+Conta* conta_criar(int numero) {
     Conta* c = malloc(sizeof(Conta));
 
 
     if (c != NULL) {
-        c->RG = RG;
-        strcpy(c->nome, nome);
-        strcpy(c->email, email);
-        strcpy(c->senha, senha);
+        c->numero = numero;
         c->saldo = 0.0;
     }
 

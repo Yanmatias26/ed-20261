@@ -17,5 +17,7 @@ void enfileirar(Fila *fila, int valor); //enqueue
 void desenfileirar(Fila *fila); //dequeue
 void destruir(Fila *fila);
 int fila_vazia(Fila *fila);
+void fila_exibir(Fila *fila);
+void fila_inicio(Fila *fila);
 
 #endif

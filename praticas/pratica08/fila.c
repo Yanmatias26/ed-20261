@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "fila.h"
 
@@ -56,4 +57,30 @@ void desenfileirar(Fila *fila){
 
 int fila_vazia(Fila *fila){
     return fila !=NULL && fila->primeiro == NULL;
+}
+
+void fila_inicio(Fila *fila) {
+    if (fila_vazia(fila)) {
+        printf("A fila esta vazia. Nao ha elemento no inicio.\n");
+        return;
+    }
+
+    // Acessa diretamente o dado do primeiro nó
+    printf("Elemento no inicio da fila: %d\n", fila->primeiro->dado);
+}
+
+void fila_exibir(Fila *fila) {
+    if (fila_vazia(fila)) {
+        printf("A fila esta vazia.\n");
+        return;
+    }
+
+    No *atual = fila->primeiro;
+    
+    printf("Elementos da fila: ");
+    while (atual != NULL) {
+        printf("%d ", atual->dado);
+        atual = atual->proximo; // Avança para o próximo nó
+    }
+    printf("\n");
 }

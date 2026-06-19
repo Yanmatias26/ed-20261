@@ -10,62 +10,41 @@ int main()
     enfileirar(f, 0);
 
     No *no = f->primeiro;
-    while (no != NULL)
-    {
-        printf("%i ->", no->dado);
-        no = no->proximo;
-    }
-    printf("\n");
+
+    fila_exibir(f);
 
     desenfileirar(f);
 
     no = f->primeiro;
-    while (no != NULL)
-    {
-        printf("%i ->", no->dado);
-        no = no->proximo;
-    }
-    printf("\n");
+
+    fila_exibir(f);
 
     enfileirar(f, 6);
 
     no = f->primeiro;
-    while (no != NULL)
-    {
-        printf("%i ->", no->dado);
-        no = no->proximo;
-    }
+
+    fila_exibir(f);
+
+
+    desenfileirar(f);
+
+    no = f->primeiro;
+    
+    fila_exibir(f);
+
+    desenfileirar(f);
+
+    no = f->primeiro;
+
+    fila_exibir(f);
+
     printf("\n");
 
     desenfileirar(f);
 
     no = f->primeiro;
-    while (no != NULL)
-    {
-        printf("%i ->", no->dado);
-        no = no->proximo;
-    }
-    printf("\n");
 
-    desenfileirar(f);
-
-    no = f->primeiro;
-    while (no != NULL)
-    {
-        printf("%i ->", no->dado);
-        no = no->proximo;
-    }
-    printf("\n");
-
-    desenfileirar(f);
-
-    no = f->primeiro;
-    while (no != NULL)
-    {
-        printf("%i ->", no->dado);
-        no = no->proximo;
-    }
-    printf("\n");
+    fila_exibir(f);
 
     return 0;
 }

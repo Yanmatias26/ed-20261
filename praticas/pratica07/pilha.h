@@ -17,6 +17,7 @@ No *pilha_topo(Pilha *pilha);
 void empilhar(Pilha *pilha, int valor);
 void desempilhar(Pilha *pilha);
 void destruir(Pilha *pilha);
+void pilha_exibir(Pilha *pilha);
 
 
 #endif

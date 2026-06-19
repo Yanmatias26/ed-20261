@@ -9,26 +9,19 @@ int main(){
     empilhar(p, 8);
     empilhar(p, 0);
 
-    No *no = p->topo;
-    while(no!= NULL){
-        printf("%i ->", no->dado);
-        no = no->proximo;
-    }
+    pilha_exibir(p);
+    
     printf("\n");
     desempilhar(p);
     empilhar(p, 6);
-            no = p->topo;
-        while(no!= NULL){
-        printf("%i ->", no->dado);
-        no = no->proximo;
-    } printf("\n");
+    pilha_exibir(p);
+
+    printf("\n");
     desempilhar(p);
     desempilhar(p);
-        no = p->topo;
-        while(no!= NULL){
-        printf("%i ->", no->dado);
-        no = no->proximo;
-    }  printf("\n");
+
+    pilha_exibir(p);
+    printf("\n");
 
     destruir(p);
 

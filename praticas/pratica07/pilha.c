@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "pilha.h"
 
@@ -41,4 +42,12 @@ void desempilhar(Pilha *pilha){
 void destruir(Pilha *pilha){
     free(pilha);
 
+}
+
+void pilha_exibir(Pilha *pilha){
+    No *no = pilha->topo;
+        while(no!= NULL){
+        printf("%i ->", no->dado);
+        no = no->proximo;
+    }
 }

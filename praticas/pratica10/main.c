@@ -12,7 +12,7 @@ int main() {
     inserir(t, 2);
 
     printf("Tabela apos insercoes:\n");
-    tabela_hash_exibir(t);
+    hash_exibir(t);
 
     printf("\nBuscando valor 15: %s\n", (buscar(t, 15) != -1 ? "Encontrado" : "Nao encontrado"));
 
@@ -20,7 +20,7 @@ int main() {
     remover(t, 15);
 
     printf("Tabela apos remocao:\n");
-    tabela_hash_exibir(t);
+    hash_exibir(t);
 
     destruir(t);
 
